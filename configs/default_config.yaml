@@ -1,0 +1,28 @@
+data:
+  fsd_train_images: "data/FSD/train/images"
+  fsd_train_masks: "data/FSD/train/masks"
+  fsd_val_images: "data/FSD/val/images"
+  fsd_val_masks: "data/FSD/val/masks"
+  hand_train_images: "data/hand/train/images"
+  hand_train_masks: "data/hand/train/masks"
+  hand_val_images: "data/hand/val/images"
+  hand_val_masks: "data/hand/val/masks"
+  hand_val_hand_masks: "data/hand/val/hand_masks"
+
+training:
+  batch_size: 4
+  num_epochs: 200
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  image_size: [1024, 1024]
+  num_workers: 2
+  use_amp: true
+  hand_weight: 5.0
+  checkpoint_interval: 5
+  log_interval: 100
+  patience: 2
+  lr_factor: 0.5
+
+output_dir: "./outputs"
+checkpoint_dir: "./checkpoints"
+log_file: "training_log.txt"
