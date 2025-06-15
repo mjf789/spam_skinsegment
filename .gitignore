@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Model files
+*.pth
+*.pt
+
+# Logs
+*.log
+training_log.txt
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
